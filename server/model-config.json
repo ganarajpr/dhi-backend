@@ -27,9 +27,5 @@
   "Project": {
     "dataSource": "db",
     "public": true
-  },
-  "External": {
-    "dataSource": "db",
-    "public": true
   }
 }

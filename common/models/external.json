@@ -1,9 +1,0 @@
-{
-  "name": "External",
-  "base": "PersistedModel",
-  "properties": {},
-  "validations": [],
-  "relations": {},
-  "acls": [],
-  "methods": []
-}

@@ -1,6 +1,11 @@
+var acc = require("ext-accessor");
 module.exports = function(Project){
     Project.functionexternals = function(fnSource, cb) {
-        cb(null,fnSource);
+        console.log(fnSource);
+        fnSource = fnSource.replace(/(\r\n|\n|\r)/gm,"");
+        console.log(fnSource);
+        var extAcc = acc.getAccessors(fnSource);
+        cb(null,extAcc);
     };
 
     Project.remoteMethod(
@@ -9,9 +14,9 @@ module.exports = function(Project){
             accepts: {arg: 'fn',type : 'String'},
             http : {
                 path : '/externals',
-                verb : 'GET'
+                verb : 'POST'
             },
             returns: {arg : 'defs' , type : 'ExternalDef'}
         }
     );
-}
+};

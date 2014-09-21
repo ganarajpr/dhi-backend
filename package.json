@@ -8,7 +8,7 @@
   "dependencies": {
     "compression": "^1.0.3",
     "errorhandler": "^1.1.1",
-    "ext-accessor": "0.0.2",
+    "ext-accessor": "0.0.7",
     "loopback": "^2.0.0",
     "loopback-boot": "^2.0.0",
     "loopback-connector-mongodb": "^1.4.3",
